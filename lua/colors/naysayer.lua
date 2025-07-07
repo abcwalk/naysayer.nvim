@@ -115,4 +115,9 @@ vim.g.naysayer_lualine = {
   },
 }
 
+local ok, lualine = pcall(require, 'lualine')
+if ok then
+  lualine.setup({ options = { theme = vim.g.naysayer_lualine } })
+end
+
 return colors
