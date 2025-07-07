@@ -85,7 +85,34 @@ set(0, "rainbowcol6", { fg = colors.red })
 -- Lualine integration
 set(0, "StatusLine", { fg = colors.lualine_fg, bg = colors.lualine_bg })
 set(0, "StatusLineNC", { fg = colors.line_fg, bg = colors.gutter })
-set(0, "StatusLineFilename", { fg = colors.lualine_fg, bg = colors.lualine_bg })
-set(0, "StatusLinePercent", { fg = colors.lualine_alt_fg, bg = colors.lualine_alt_bg })
+
+-- Internal lualine theme table
+vim.g.naysayer_lualine = {
+  normal = {
+    a = { fg = colors.lualine_fg, bg = colors.lualine_bg, gui = "bold" },
+    b = { fg = colors.lualine_fg, bg = colors.lualine_bg },
+    c = { fg = colors.lualine_fg, bg = colors.lualine_bg },
+  },
+  insert = {
+    a = { fg = colors.lualine_fg, bg = colors.green, gui = "bold" },
+    b = { fg = colors.lualine_fg, bg = colors.green },
+    c = { fg = colors.lualine_fg, bg = colors.lualine_bg },
+  },
+  visual = {
+    a = { fg = colors.lualine_fg, bg = colors.blue, gui = "bold" },
+    b = { fg = colors.lualine_fg, bg = colors.blue },
+    c = { fg = colors.lualine_fg, bg = colors.lualine_bg },
+  },
+  replace = {
+    a = { fg = colors.lualine_fg, bg = colors.red, gui = "bold" },
+    b = { fg = colors.lualine_fg, bg = colors.red },
+    c = { fg = colors.lualine_fg, bg = colors.lualine_bg },
+  },
+  inactive = {
+    a = { fg = colors.line_fg, bg = colors.gutter, gui = "bold" },
+    b = { fg = colors.line_fg, bg = colors.gutter },
+    c = { fg = colors.line_fg, bg = colors.gutter },
+  },
+}
 
 return colors
