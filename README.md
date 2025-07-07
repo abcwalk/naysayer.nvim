@@ -1,19 +1,25 @@
 # naysayer.nvim
 
-🎨 A dark green-blue Neovim colorscheme. It's a port of [Nick Aversano's Emacs theme](https://github.com/nickav/naysayer-theme.el) for Neovim, best known from Jonathan Blow's compiler livestreams.
+A dark green-blue Neovim colorscheme. It's a port of [Nick Aversano's Emacs theme](https://github.com/nickav/naysayer-theme.el) for Neovim, best known from Jonathan Blow's compiler livestreams.
 
 ## Showcase
 ![Screenshot](screenshots/example.png)
 
 ## Features
 
-- ✅ High-contrast dark theme
-- ✅ Clean typography for code
-- ✅ Inspired by Monokai, but more muted
-- ✅ Support for diagnostics and LSP
-- ✅ Rainbow parentheses compatible
+- High-contrast dark theme
+- Clean typography for code
+- Inspired by Monokai, but more muted
+- Support for diagnostics and LSP
+- Rainbow parentheses compatible
 
 ## Installation
+
+### Using Packer
+
+```lua
+use { 'RostislavArts/naysayer.nvim' }
+```
 
 ### Using Lazy.nvim
 
@@ -28,19 +34,9 @@
 }
 ````
 
-### Using Packer
-
-```lua
-use {
-  'RostislavArts/naysayer.nvim',
-  config = function()
-    vim.cmd.colorscheme('naysayer')
-  end
-}
-```
-
 ## Usage
 
+Inside `init.lua`
 ```lua
 vim.cmd.colorscheme('naysayer')
 ```
