@@ -31,6 +31,8 @@ local colors = {
   line_fg    = "#126367",
   lualine_fg = "#022527",
   lualine_bg = "#d1b897",
+  lualine_alt_fg = "#022527",
+  lualine_alt_bg = "#b5a782",
 }
 
 vim.cmd("highlight clear")
@@ -83,5 +85,7 @@ set(0, "rainbowcol6", { fg = colors.red })
 -- Lualine integration
 set(0, "StatusLine", { fg = colors.lualine_fg, bg = colors.lualine_bg })
 set(0, "StatusLineNC", { fg = colors.line_fg, bg = colors.gutter })
+set(0, "StatusLineFilename", { fg = colors.lualine_fg, bg = colors.lualine_bg })
+set(0, "StatusLinePercent", { fg = colors.lualine_alt_fg, bg = colors.lualine_alt_bg })
 
 return colors
