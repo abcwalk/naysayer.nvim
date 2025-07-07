@@ -5,14 +5,6 @@ A dark green-blue Neovim colorscheme. It's a port of [Nick Aversano's Emacs them
 ## Showcase
 ![Screenshot](screenshots/example.png)
 
-## Features
-
-- High-contrast dark theme
-- Clean typography for code
-- Inspired by Monokai, but more muted
-- Support for diagnostics and LSP
-- Rainbow parentheses compatible
-
 ## Installation
 
 ### Using Packer
