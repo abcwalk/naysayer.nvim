@@ -13,7 +13,7 @@ local colors = {
 
   background = "#062329",
   gutter     = "#062329",
-  selection  = "#0000ff",
+  selection  = "#0b3335",
   text       = "#d1b897",
   comment    = "#44b340",
   punctuation= "#8cde94",
@@ -29,6 +29,8 @@ local colors = {
   warning    = "#ffaa00",
   highlight  = "#0b3335",
   line_fg    = "#126367",
+  lualine_fg = "#022527",
+  lualine_bg = "#d1b897",
 }
 
 vim.cmd("highlight clear")
@@ -77,5 +79,9 @@ set(0, "rainbowcol3", { fg = colors.green })
 set(0, "rainbowcol4", { fg = colors.yellow })
 set(0, "rainbowcol5", { fg = colors.orange })
 set(0, "rainbowcol6", { fg = colors.red })
+
+-- Lualine integration
+set(0, "StatusLine", { fg = colors.lualine_fg, bg = colors.lualine_bg })
+set(0, "StatusLineNC", { fg = colors.line_fg, bg = colors.gutter })
 
 return colors
