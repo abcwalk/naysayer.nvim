@@ -31,8 +31,6 @@ local colors = {
   line_fg    = "#126367",
   lualine_fg = "#022527",
   lualine_bg = "#d1b897",
-  lualine_alt_fg = "#022527",
-  lualine_alt_bg = "#b5a782",
 }
 
 vim.cmd("highlight clear")
@@ -83,41 +81,10 @@ set(0, "rainbowcol5", { fg = colors.orange })
 set(0, "rainbowcol6", { fg = colors.red })
 
 -- Lualine integration
-set(0, "StatusLine", { fg = colors.lualine_fg, bg = colors.lualine_bg })
-set(0, "StatusLineNC", { fg = colors.line_fg, bg = colors.gutter })
-
--- Internal lualine theme table
-vim.g.naysayer_lualine = {
-  normal = {
-    a = { fg = colors.lualine_fg, bg = colors.lualine_bg, gui = "bold" },
-    b = { fg = colors.lualine_fg, bg = colors.lualine_bg },
-    c = { fg = colors.lualine_fg, bg = colors.lualine_bg },
-  },
-  insert = {
-    a = { fg = colors.lualine_fg, bg = colors.green, gui = "bold" },
-    b = { fg = colors.lualine_fg, bg = colors.green },
-    c = { fg = colors.lualine_fg, bg = colors.lualine_bg },
-  },
-  visual = {
-    a = { fg = colors.lualine_fg, bg = colors.blue, gui = "bold" },
-    b = { fg = colors.lualine_fg, bg = colors.blue },
-    c = { fg = colors.lualine_fg, bg = colors.lualine_bg },
-  },
-  replace = {
-    a = { fg = colors.lualine_fg, bg = colors.red, gui = "bold" },
-    b = { fg = colors.lualine_fg, bg = colors.red },
-    c = { fg = colors.lualine_fg, bg = colors.lualine_bg },
-  },
-  inactive = {
-    a = { fg = colors.line_fg, bg = colors.gutter, gui = "bold" },
-    b = { fg = colors.line_fg, bg = colors.gutter },
-    c = { fg = colors.line_fg, bg = colors.gutter },
-  },
-}
-
-local ok, lualine = pcall(require, 'lualine')
-if ok then
-  lualine.setup({ options = { theme = vim.g.naysayer_lualine } })
-end
+set(0, "StatusLine",        { fg = colors.lualine_fg, bg = colors.lualine_bg })
+set(0, "StatusLineNC",      { fg = colors.line_fg, bg = colors.gutter })
+set(0, "StatusLineSeparator", { fg = colors.lualine_fg, bg = colors.lualine_bg })
+set(0, "StatusLineTerm",    { fg = colors.lualine_fg, bg = colors.lualine_bg })
+set(0, "StatusLineTermNC",  { fg = colors.line_fg, bg = colors.gutter })
 
 return colors
