@@ -13,7 +13,7 @@ local colors = {
 
   background = "#062329",
   gutter     = "#062329",
-  selection  = "#0b3335",
+  selection  = "#155f63",
   text       = "#d1b897",
   comment    = "#44b340",
   punctuation= "#8cde94",
@@ -83,8 +83,5 @@ set(0, "rainbowcol6", { fg = colors.red })
 -- Lualine integration
 set(0, "StatusLine",        { fg = colors.lualine_fg, bg = colors.lualine_bg })
 set(0, "StatusLineNC",      { fg = colors.line_fg, bg = colors.gutter })
-set(0, "StatusLineSeparator", { fg = colors.lualine_fg, bg = colors.lualine_bg })
-set(0, "StatusLineTerm",    { fg = colors.lualine_fg, bg = colors.lualine_bg })
-set(0, "StatusLineTermNC",  { fg = colors.line_fg, bg = colors.gutter })
 
 return colors
