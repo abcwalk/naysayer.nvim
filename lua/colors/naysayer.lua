@@ -31,6 +31,12 @@ local colors = {
   line_fg    = "#126367",
   lualine_fg = "#12251b",
   lualine_bg = "#d3b58e",
+
+  dimmed_keyword = "#b0b0b0",
+  dimmed_function = "#cccccc",
+  dimmed_variable = "#a0b8c8",
+  dimmed_string = "#2fa89e",
+  dimmed_type = "#79c4a6",
 }
 
 vim.cmd("highlight clear")
@@ -83,6 +89,31 @@ set(0, "rainbowcol6", { fg = colors.red })
 -- Lualine integration
 set(0, "StatusLine",        { fg = colors.lualine_fg, bg = colors.lualine_bg })
 set(0, "StatusLineNC",      { fg = colors.line_fg, bg = colors.gutter })
+
+-- Treesitter extended highlights
+set(0, "@comment",           { fg = colors.comment })
+set(0, "@string",            { fg = colors.dimmed_string })
+set(0, "@number",            { fg = colors.number })
+set(0, "@boolean",           { fg = colors.constant })
+set(0, "@constant",          { fg = colors.constant })
+set(0, "@constant.builtin",  { fg = colors.cyan })
+set(0, "@character",         { fg = colors.string })
+set(0, "@function",          { fg = colors.function_ })
+set(0, "@function.builtin",  { fg = colors.dimmed_function })
+set(0, "@function.call",     { fg = colors.function_ })
+set(0, "@variable",          { fg = colors.variable })
+set(0, "@variable.builtin",  { fg = colors.dimmed_variable })
+set(0, "@type",              { fg = colors.punctuation })
+set(0, "@type.builtin",      { fg = colors.dimmed_type })
+set(0, "@keyword",           { fg = colors.keyword })
+set(0, "@keyword.function",  { fg = colors.dimmed_keyword })
+set(0, "@keyword.return",    { fg = colors.keyword })
+set(0, "@field",             { fg = colors.variable })
+set(0, "@property",          { fg = colors.variable })
+set(0, "@parameter",         { fg = colors.variable })
+set(0, "@namespace",         { fg = colors.orange })
+set(0, "@punctuation",       { fg = colors.punctuation })
+set(0, "@operator",          { fg = colors.white })
 
 return colors
 
