@@ -35,8 +35,11 @@ local default_colors = {
 
 local M = {}
 
+local last_colors = nil
+
 M.setup = function(opts)
   local colors = vim.tbl_deep_extend("force", {}, default_colors, opts or {})
+  last_colors = colors
 
   vim.cmd("highlight clear")
   vim.o.background = "dark"
@@ -90,6 +93,10 @@ M.setup = function(opts)
   set(0, "StatusLineNC",      { fg = colors.line_fg, bg = colors.gutter })
 
   return colors
+end
+
+M.colors = function()
+  return last_colors or default_colors
 end
 
 return M
