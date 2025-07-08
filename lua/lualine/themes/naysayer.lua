@@ -1,13 +1,4 @@
-local ok, naysayer = pcall(require, "naysayer")
-local c = ok and naysayer.colors() or {
-  lualine_fg = "#12251b",
-  lualine_bg = "#d3b58e",
-  green = "#A6E22E",
-  blue = "#66D9EF",
-  red = "#F92672",
-  line_fg = "#126367",
-  gutter = "#062625"
-}
+local c = require("colors.naysayer")
 
 return {
   normal = {
