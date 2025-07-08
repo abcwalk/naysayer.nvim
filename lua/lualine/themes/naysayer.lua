@@ -1,30 +1,31 @@
-local c = require("colors.naysayer")
+local ok, theme = pcall(require, "naysayer")
+local colors = ok and theme.setup() or {}
 
 return {
   normal = {
-    a = { fg = c.lualine_fg, bg = c.lualine_bg, gui = "bold" },
-    b = { fg = c.lualine_fg, bg = c.lualine_bg },
-    c = { fg = c.lualine_fg, bg = c.lualine_bg },
+    a = { fg = colors.lualine_fg, bg = colors.lualine_bg, gui = "bold" },
+    b = { fg = colors.lualine_fg, bg = colors.lualine_bg },
+    c = { fg = colors.lualine_fg, bg = colors.lualine_bg },
   },
   insert = {
-    a = { fg = c.lualine_fg, bg = c.green, gui = "bold" },
-    b = { fg = c.lualine_fg, bg = c.green },
-    c = { fg = c.lualine_fg, bg = c.lualine_bg },
+    a = { fg = colors.lualine_fg, bg = colors.green, gui = "bold" },
+    b = { fg = colors.lualine_fg, bg = colors.green },
+    c = { fg = colors.lualine_fg, bg = colors.lualine_bg },
   },
   visual = {
-    a = { fg = c.lualine_fg, bg = c.blue, gui = "bold" },
-    b = { fg = c.lualine_fg, bg = c.blue },
-    c = { fg = c.lualine_fg, bg = c.lualine_bg },
+    a = { fg = colors.lualine_fg, bg = colors.blue, gui = "bold" },
+    b = { fg = colors.lualine_fg, bg = colors.blue },
+    c = { fg = colors.lualine_fg, bg = colors.lualine_bg },
   },
   replace = {
-    a = { fg = c.lualine_fg, bg = c.red, gui = "bold" },
-    b = { fg = c.lualine_fg, bg = c.red },
-    c = { fg = c.lualine_fg, bg = c.lualine_bg },
+    a = { fg = colors.lualine_fg, bg = colors.red, gui = "bold" },
+    b = { fg = colors.lualine_fg, bg = colors.red },
+    c = { fg = colors.lualine_fg, bg = colors.lualine_bg },
   },
   inactive = {
-    a = { fg = c.line_fg, bg = c.gutter, gui = "bold" },
-    b = { fg = c.line_fg, bg = c.gutter },
-    c = { fg = c.line_fg, bg = c.gutter },
+    a = { fg = colors.line_fg or "#555555", bg = colors.gutter or "#111111", gui = "bold" },
+    b = { fg = colors.line_fg or "#555555", bg = colors.gutter or "#111111" },
+    c = { fg = colors.line_fg or "#555555", bg = colors.gutter or "#111111" },
   },
 }
 
