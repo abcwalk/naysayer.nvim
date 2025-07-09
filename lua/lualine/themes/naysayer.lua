@@ -8,17 +8,17 @@ return {
   },
   insert = {
     a = { fg = c.lualine_fg, bg = c.green, gui = "bold" },
-    b = { fg = c.lualine_fg, bg = c.green },
+    b = { fg = c.lualine_fg, bg = c.lualine_bg },
     c = { fg = c.lualine_fg, bg = c.lualine_bg },
   },
   visual = {
     a = { fg = c.lualine_fg, bg = c.blue, gui = "bold" },
-    b = { fg = c.lualine_fg, bg = c.blue },
+    b = { fg = c.lualine_fg, bg = c.lualine_bg },
     c = { fg = c.lualine_fg, bg = c.lualine_bg },
   },
   replace = {
     a = { fg = c.lualine_fg, bg = c.red, gui = "bold" },
-    b = { fg = c.lualine_fg, bg = c.red },
+    b = { fg = c.lualine_fg, bg = c.lualine_bg },
     c = { fg = c.lualine_fg, bg = c.lualine_bg },
   },
   inactive = {
