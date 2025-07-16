@@ -3,7 +3,11 @@
 A dark green-blue Neovim colorscheme. It's a port of [Nick Aversano's Emacs theme](https://github.com/nickav/naysayer-theme.el) for Neovim, best known from Jonathan Blow's compiler livestreams.
 
 ## Showcase
+### Treesitter **disabled** (most accurate to Jon's theme)
 ![Screenshot](screenshots/example.png)
+
+### Treesitter **enabled**
+![Screenshot_Treesitter](screenshots/example-treesitter.png)
 
 ## Installation
 
