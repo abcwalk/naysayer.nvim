@@ -7,7 +7,7 @@ A dark green-blue Neovim colorscheme. It's a port of [Nick Aversano's Emacs them
 ![Screenshot](screenshots/example.png)
 
 ### Treesitter **enabled**
-![Screenshot_Treesitter](screenshots/example-treesitter.png)
+![Screenshot_Treesitter](screenshots/example_treesitter.png)
 
 ## Installation
 
