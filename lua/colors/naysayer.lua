@@ -89,8 +89,8 @@ set(0, "rainbowcol5", { fg = colors.orange })
 set(0, "rainbowcol6", { fg = colors.red })
 
 -- Lualine integration
--- set(0, "StatusLine", { fg = colors.lualine_fg, bg = colors.lualine_bg })
--- set(0, "StatusLineNC", { fg = colors.line_fg, bg = colors.gutter })
+set(0, "StatusLine", { fg = colors.lualine_fg, bg = colors.lualine_bg })
+set(0, "StatusLineNC", { fg = colors.line_fg, bg = colors.gutter })
 
 -- Treesitter highlights
 set(0, "@comment", { link = "Comment" })
