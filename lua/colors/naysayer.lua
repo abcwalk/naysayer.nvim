@@ -56,6 +56,7 @@ set(0, "CursorLine", { bg = colors.highlight })
 set(0, "ColorColumn", { bg = colors.highlight })
 set(0, "VertSplit", { fg = colors.line_fg })
 set(0, "MatchParen", { bg = colors.selection })
+set(0, "Pmenu", { link = "Normal" })
 
 -- Syntax
 set(0, "Comment", { fg = colors.comment })
