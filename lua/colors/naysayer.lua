@@ -11,7 +11,7 @@ local colors = {
 	cyan = "#A1EFE4",
 	violet = "#AE81FF",
 
-	background = "#062625",
+	background = "#142525",
 	gutter = "#062625",
 	selection = "#0000ff",
 	text = "#d0b892",
@@ -106,5 +106,8 @@ set(0, "@keyword.function", { link = "Keyword" })
 set(0, "@field", { link = "Identifier" })
 set(0, "@property", { link = "Identifier" })
 set(0, "@parameter", { link = "Identifier" })
+
+-- LSP
+set(0, "LspReferenceText", { fg = "none", bg = "none" })
 
 return colors
