@@ -109,5 +109,7 @@ set(0, "@parameter", { link = "Identifier" })
 
 -- LSP
 set(0, "LspReferenceText", { fg = "none", bg = "none" })
+set(0, "LspReferenceRead", { fg = "none", bg = "none" })
+set(0, "LspReferenceWrite", { fg = "none", bg = "none" })
 
 return colors
